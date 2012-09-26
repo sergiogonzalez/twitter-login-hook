@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+
+<hook>
+	<portal-properties>portal.properties</portal-properties>
+	<custom-jsp-dir>/custom_jsps</custom-jsp-dir>
+	<struts-action>
+		<struts-action-path>/portal/twitter_login</struts-action-path>
+		<struts-action-impl>com.sympo.twitter.TwitterOAuth</struts-action-impl>
+	</struts-action>
+	<struts-action>
+		<struts-action-path>/login/create_account</struts-action-path>
+		<struts-action-impl>com.sympo.login.action.CreateAccountAction</struts-action-impl>
+	</struts-action>
+</hook>
